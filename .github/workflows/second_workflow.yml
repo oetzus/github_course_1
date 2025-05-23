@@ -1,7 +1,7 @@
 on: issues
 jobs:
   output_event_details:
-    runs-on: ubuntu-latest
+    runs-on: auto-u22-base
     steps:
       - name: Output GitHub context
         run: echo "${{ toJSON(github) }}"
